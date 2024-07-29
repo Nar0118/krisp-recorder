@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.controls {
+  margin: 20px;
+}
+video,
+canvas {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+button:not([active]) {
+  background: unset;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:not([active]):hover {
+  background: #000;
+  color: #fff;
+}
+
+.active {
+  background: green !important;
+  color: #fff;
+  border: none;
+}
+
+.image img {
+  width: 50px;
+}
+
+.image {
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid;
+  display: flex;
+  width: fit-content;
+  margin: 20px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.image_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
